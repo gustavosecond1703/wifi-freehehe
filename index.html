@@ -1,38 +1,32 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Imagem Grande</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mostrar Imagem</title>
 
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
     body {
-      width: 100vw;
+      margin: 0;
       height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: #111;
-      overflow: hidden;
+      background: #1a1a1a;
+      font-family: Arial, sans-serif;
     }
 
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
+    .imagem {
+      width: 700px;
+      max-width: 90%;
+      border-radius: 15px;
+      box-shadow: 0 0 25px rgba(0,0,0,0.5);
     }
   </style>
 </head>
 <body>
 
-  <!-- Troque "imagem.jpg" pelo nome real do arquivo -->
-  <img src="imagem.jpg" alt="Imagem Grande">
+  <img src="imagem.jpg" alt="Imagem" class="imagem">
 
 </body>
 </html>
